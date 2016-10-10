@@ -1,0 +1,71 @@
+---
+title: "DDP_Ex_1"
+author: "Igor"
+date: "October 10, 2016"
+output: ioslides_presentation
+---
+
+
+## My new slide
+
+### A top level subheading 
+
+#### A second level subheading
+
+## Next slide - now full of content
+
+- Bullet 1
+- Bullet 2
+
+1. Item 1
+2. Item 2
+
+## One more slide - simple formating options
+
+*Italicized text*
+
+**Bold text**
+
+`for(i %in% 1:20)` 
+
+## Running `R` code with the output
+
+```{r}
+
+head(mtcars)
+
+```
+
+## A plot
+
+```{r, echo=FALSE, fig.align='center', fig.cap= "Just a graph"}
+
+plot(y = mtcars$mpg, x = mtcars$wt, ylab = "mgp", xlab = "Car weight" )
+
+```
+
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
