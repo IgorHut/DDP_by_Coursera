@@ -1,0 +1,29 @@
+---
+title: "Leaflet Map"
+author: "Igor"
+date: "October 11, 2016"
+always_allow_html: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Extremely interesting map made on `r Sys.Date()` 
+
+### There you go, you wan't believe your own eyes when you see this one...
+
+```{r}
+library(leaflet)
+
+my_map <- leaflet() %>%
+          addTiles() %>%
+          addMarkers(lat=43.979255, lng= 15.384742, 
+             popup="A five year old child has drawn a heart on this map!") %>%
+          addRectangles(lat1 = 43.982812, lng1 = 15.376512, 
+                        lat2 = 43.973462, lng2 = 15.389884)
+
+my_map
+
+```
+  
